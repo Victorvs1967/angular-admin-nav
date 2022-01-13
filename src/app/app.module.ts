@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashComponent } from './admin/dash/dash.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { NavComponent } from './admin/nav/nav.component';
+import { MaterialModule } from './modules/material/material.module';
+import { CardComponent } from './admin/card/card.component';
+import { UsersComponent } from './admin/users/users.component';
+import { ProjectsComponent } from './admin/projects/projects.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashComponent,
+    NavComponent,
+    CardComponent,
+    UsersComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
