@@ -11,6 +11,7 @@ import { MaterialModule } from './modules/material/material.module';
 import { CardComponent } from './admin/card/card.component';
 import { UsersComponent } from './admin/users/users.component';
 import { ProjectsComponent } from './admin/projects/projects.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProjectsComponent } from './admin/projects/projects.component';
     NavComponent,
     CardComponent,
     UsersComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
